@@ -47,7 +47,7 @@ class EvalAsRuby:
             output += "\n" + error
 
         try:
-          return str(output, 'utf-8')
+          return str(output)
         except NameError:
           return unicode(output ,encoding='utf-8')
 
